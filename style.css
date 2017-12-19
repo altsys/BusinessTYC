@@ -1,0 +1,29 @@
+/**
+* Theme Name: TYC Starter Theme
+* Author: Alula k.
+* Author URL: http://www.businesstyc.com
+* Description: A starter theme for projects at BusinessTYC
+* Version: 0.1
+* Text Domain: BusinessTYC
+*
+**/
+body {
+  color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+.blog-masthead h3 {
+  color: #fff;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 17.6px;
+}
+.btn-primary:hover {
+    color: #3a7999;
+    background-color: #ffffff;
+    border-color: #3a7999;
+}
