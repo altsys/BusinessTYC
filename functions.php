@@ -44,7 +44,6 @@
     }
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), '1.0', false );
     wp_enqueue_script('jquery_easing_js', get_template_directory_uri().'/js/jquery.easing.min.js', array('jquery'), '1.0', false );
-    wp_enqueue_script('jquery_easing_js', get_template_directory_uri().'/js/jquery.easing.min.js', array('jquery'), '1.0', false );
     wp_enqueue_script('jquery_sticky_js', get_template_directory_uri().'/js/jquery.sticky.js', array('jquery'), '1.0', false );
     wp_enqueue_script('jquery_scrollto_js', get_template_directory_uri().'/js/jquery.scrollTo.js', array('jquery'), '1.0', false );
     wp_enqueue_script('stellar_js', get_template_directory_uri().'/js/stellar.js', array('jquery'), '1.0', false );
@@ -78,6 +77,9 @@
     return $slug;
   }
 
+  /**
+  * Simple copyright for footer
+  **/
   function simple_copyright () {
     echo "&copy; " . get_bloginfo('name') ." ". date("Y");
   }

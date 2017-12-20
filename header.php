@@ -21,14 +21,16 @@
        <div class="blog-masthead">
          <div class="container">
              <?php
-                 wp_nav_menu( array(
-                         'menu'              => 'primary',
-                         'theme_location'    => 'primary',
-                         'depth'             => 2,
-                         'container_id'      => 'containerNavbar',
-                         'menu_class'        => 'nav nav-pills float-right',
-                         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                         'walker'            => new WP_Bootstrap_Navwalker())
+                 wp_nav_menu(
+                   array (
+                           'menu'              => 'primary',
+                           'theme_location'    => 'primary',
+                           'depth'             => 2,
+                           'container_id'      => 'containerNavbar',
+                           'menu_class'        => 'nav nav-pills float-right',
+                           'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                           'walker'            => new WP_Bootstrap_Navwalker()
+                         )
                  );
              ?>
              <h3>TYC Starter Theme</h3>
